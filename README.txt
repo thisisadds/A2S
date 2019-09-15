@@ -1,53 +1,67 @@
-
-TITLE: 
-Greatness - 100% Fully Responsive Free HTML5 Bootstrap Template
-
-AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
-
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+Eventually by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-CREDITS:
+Just a simple placeholder template for your kickass app/product/startup/whatever until it
+launches. Includes an email signup form and a cool slideshow background (more on both below).
 
-Bootstrap
-http://getbootstrap.com/
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-jQuery
-http://jquery.com/
+(* = not included)
 
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
+AJ
+aj@lkn.io | @ajlkn
 
-Modernizr
-http://modernizr.com/
 
-Google Fonts
-https://www.google.com/fonts/
+Signup Form:
 
-Icomoon
-https://icomoon.io/app/
+	The signup form won't actually do anything (other than report back with a "thank you" message)
+	until you tie it to either a third party service (eg. MailChimp) or your own hosted solution.
+	In either case, there are two ways to go:
 
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+	1. The conventional (non-AJAX) way, which pretty much comes down to pointing the form's "action"
+	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" code
+	block from assets/js/main.js (since it's not needed for this approach).
 
-animate.css
-http://daneden.me/animate
+	-or-
 
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
+	2. The AJAX way. How you set this up is largely dependent on the service/solution you're using
+	so you'll need to consult their/its documentation. However, I have included some basic code
+	(under "Signup Form" in assets/js/main.js) that will at least let you interact with the
+	form itself.
 
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
 
-jQuery countTo
-http://www.owlcarousel.owlgraphic.com/
+Slideshow Background:
 
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
+	This is pretty straightforward, but there are two JS settings you'll want to be aware of
+	(found under "Slideshow Background" in assets/js/main.js):
 
-Demo Images:
-http://unsplash.com
+	images
 
+		The list of images to cycle through, given in the following format:
+
+			'url': 'alignment'
+
+		Where 'url' is the image (eg. 'images/foo.jpg', 'http://somewhere.else/foo.jpg'), and
+		'alignment' is how the image should be vertically aligned ('top', 'center', or 'bottom').
+
+		Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
+
+	delay
+
+		How long to wait between transitions (in ms). Note that this must be at least twice as long as
+		the transition speed itself (currently 3 seconds).
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fontawesome.io)
+
+	Other:
+		Responsive Tools (github.com/ajlkn/responsive-tools)
